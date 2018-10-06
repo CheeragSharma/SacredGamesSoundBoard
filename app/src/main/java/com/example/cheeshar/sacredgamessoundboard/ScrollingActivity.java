@@ -28,7 +28,7 @@ public class ScrollingActivity extends AppCompatActivity {
         setContentView(R.layout.activity_scrolling);
 
         //long press listener
-        for(int i = 1 ; i <= 2 ; i++)
+        for(int i = 1 ; i <= 11 ; i++)
         {
             buttonName = "sound" + i;
             int resId = getResources().getIdentifier(buttonName,"id" , getPackageName());
