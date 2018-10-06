@@ -10,11 +10,9 @@
         android:id="@+id/app_bar"
         android:layout_width="match_parent"
         android:layout_height="@dimen/app_bar_height"
-        android:background="@drawable/sacred_games"
+        android:background="@mipmap/sacred_games"
         android:fitsSystemWindows="true"
-        android:theme="@style/AppTheme.AppBarOverlay">
-
-    </android.support.design.widget.AppBarLayout>
+        android:theme="@style/AppTheme.AppBarOverlay" />
 
     <include layout="@layout/content_scrolling" />
 
