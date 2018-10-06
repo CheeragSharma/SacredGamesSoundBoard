@@ -1,7 +1,10 @@
 package com.example.cheeshar.sacredgamessoundboard;
 
+import android.content.Intent;
 import android.media.MediaPlayer;
+import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
@@ -12,9 +15,15 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.PopupMenu;
+import android.widget.ShareActionProvider;
 import android.widget.TextView;
 
 import org.w3c.dom.Text;
+
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
 
 public class ScrollingActivity extends AppCompatActivity {
 
@@ -48,6 +57,13 @@ public class ScrollingActivity extends AppCompatActivity {
             @Override
             public boolean onMenuItemClick(MenuItem item)
             {
+                String mediaPath = copyFiletoExternalStorage(R.raw.sound1, "sound1.mp3");
+                Uri uri = Uri.parse(mediaPath);
+       //         ShareActionProvider shareActionProvider = (ShareActionProvider)item.getActionProvider();
+                Intent shareIntent = new Intent(Intent.ACTION_SEND);
+                shareIntent.setType("audio/mp3");
+                shareIntent.putExtra(Intent.EXTRA_STREAM,uri);
+                startActivity(Intent.createChooser(shareIntent, "Sending sound"));
                 switch (item.getItemId())
                 {
                     case R.id.share:
@@ -100,5 +116,28 @@ public class ScrollingActivity extends AppCompatActivity {
         }
     }
 
+    private String copyFiletoExternalStorage(int resourceId, String resourceName){
+        String pathSDCard = Environment.getExternalStorageDirectory() + "/Android/data/" + resourceName;
+        try{
+            InputStream in = getResources().openRawResource(resourceId);
+            FileOutputStream out = null;
+            out = new FileOutputStream(pathSDCard);
+            byte[] buff = new byte[1024];
+            int read = 0;
+            try {
+                while ((read = in.read(buff)) > 0) {
+                    out.write(buff, 0, read);
+                }
+            } finally {
+                in.close();
+                out.close();
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return  pathSDCard;
+    }
 
 }
