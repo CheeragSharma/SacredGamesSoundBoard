@@ -76,6 +76,7 @@ public class ScrollingActivity extends AppCompatActivity {
                 Intent shareIntent = new Intent(Intent.ACTION_SEND);
                 shareIntent.setType("audio/mp3");
                 shareIntent.putExtra(Intent.EXTRA_STREAM,uri);
+                shareIntent.putExtra(Intent.EXTRA_TEXT, "Text that needs to be sent along!");
                 startActivity(Intent.createChooser(shareIntent, "Sending sound"));
                 return true;
             }
