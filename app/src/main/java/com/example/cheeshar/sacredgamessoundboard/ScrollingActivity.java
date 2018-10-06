@@ -68,17 +68,21 @@ public class ScrollingActivity extends AppCompatActivity {
     public void musicOnClick(View view)
     {
         stopPlaying();
-        switch (view.getId())
-        {
-            case R.id.sound1:
-                mp = MediaPlayer.create(this, R.raw.sound1);
-                mp.start();
-                break;
-            case R.id.sound2:
-                mp = MediaPlayer.create(this, R.raw.sound2);
-                mp.start();
-                break;
-        }
+        String tag = view.getTag().toString();
+        int musicId = getResources().getIdentifier(tag,"raw",getPackageName());
+        mp = MediaPlayer.create(this, musicId);
+        mp.start();
+//        switch (view.getId())
+//        {
+//            case R.id.sound1:
+//                mp = MediaPlayer.create(this, R.raw.sound1);
+//                mp.start();
+//                break;
+//            case R.id.sound2:
+//                mp = MediaPlayer.create(this, R.raw.sound2);
+//                mp.start();
+//                break;
+//        }
     }
 
     protected void stopPlaying(){
