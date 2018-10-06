@@ -1,21 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     tools:context=".ScrollingActivity">
 
-    <android.support.design.widget.AppBarLayout
-        android:id="@+id/app_bar"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="@dimen/app_bar_height"
-        android:background="@drawable/sacred_games"
-        android:fitsSystemWindows="true"
-        android:theme="@style/AppTheme.AppBarOverlay">
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorButtonBackground"
+        android:gravity="center_horizontal|fill"
+        android:orientation="vertical">
 
-    </android.support.design.widget.AppBarLayout>
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/app_bar_height"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="Sacred games logo"
+            app:srcCompat="@mipmap/sacred_games" />
 
-    <include layout="@layout/content_scrolling" />
+        <include layout="@layout/content_scrolling" />
+    </LinearLayout>
 
 </android.support.design.widget.CoordinatorLayout>

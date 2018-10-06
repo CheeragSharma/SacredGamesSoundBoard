@@ -2,7 +2,7 @@
 <resources>
     <string name="app_name">SacredGamesSoundBoard</string>
     <string name="action_settings">Settings</string>
-    <string name="share">share</string>
+    <string name="share">Share</string>
 <string name="sound1">aaja_aaja_muh_mein</string>
     <string name="sound2">aur_thodi_der_mei_aa_jata</string>
     <string name="sound3">bas_itna_hi_bc</string>

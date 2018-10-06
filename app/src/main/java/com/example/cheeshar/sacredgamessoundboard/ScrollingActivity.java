@@ -1,11 +1,15 @@
 package com.example.cheeshar.sacredgamessoundboard;
 
+import android.annotation.TargetApi;
+import android.content.Context;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
 import android.support.v7.app.AppCompatActivity;
+import android.view.ContextThemeWrapper;
+import android.view.Gravity;
 import android.view.MenuInflater;
 import android.view.View;
 import android.view.MenuItem;
@@ -45,7 +49,17 @@ public class ScrollingActivity extends AppCompatActivity {
     }
 
     public void showPopup(View v) {
-        PopupMenu popup = new PopupMenu(this, v);
+//        PopupMenu popupMenu = new PopupMenu()
+        Context wrapper = new ContextThemeWrapper(this, R.style.PopupMenu);
+//        PopupMenu popup = new PopupMenu(this, v,Gravity.RIGHT,0,R.style.PopupMenu1);
+        PopupMenu popup;
+        if (android.os.Build.VERSION.SDK_INT >= 15) {
+            popup = new PopupMenu(wrapper, v, Gravity.RIGHT);
+        }
+        else
+        {
+            popup = new PopupMenu(wrapper, v);
+        }
         MenuInflater inflater = popup.getMenuInflater();
         inflater.inflate(R.menu.popup, popup.getMenu());
         popup.show();
@@ -74,15 +88,6 @@ public class ScrollingActivity extends AppCompatActivity {
         stopPlaying();
         super.onPause();
     }
-
-
-    @Override
-    protected void onPause()
-    {
-        stopPlaying();
-        super.onPause();
-    }
-
 
     public void musicOnClick(View view)
     {
