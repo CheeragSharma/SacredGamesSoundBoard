@@ -17,6 +17,7 @@
         android:layout_marginStart="0dp"
         android:layout_marginTop="0dp"
         android:onClick="musicOnClick"
+        android:tag="sound1"
         android:text="@string/sound1" />
 
     <Button
@@ -26,5 +27,6 @@
         android:layout_below="@+id/sound1"
         android:layout_centerHorizontal="true"
         android:onClick="musicOnClick"
+        android:tag="sound2"
         android:text="@string/sound2" />
 </RelativeLayout>
