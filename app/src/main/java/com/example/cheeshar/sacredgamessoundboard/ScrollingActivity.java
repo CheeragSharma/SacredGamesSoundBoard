@@ -24,7 +24,12 @@ public class ScrollingActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scrolling);
     }
-
+    @Override
+    protected void onPause()
+    {
+        stopPlaying();
+        super.onPause();
+    }
 
 
     public void musicOnClick(View view)
