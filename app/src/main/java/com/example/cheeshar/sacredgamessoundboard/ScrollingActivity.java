@@ -58,6 +58,13 @@ public class ScrollingActivity extends AppCompatActivity {
 
         });
     }
+    @Override
+    protected void onPause()
+    {
+        stopPlaying();
+        super.onPause();
+    }
+
 
 //    public void shareclip()
 //    {
