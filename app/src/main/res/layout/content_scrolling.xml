@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".ScrollingActivity"
-    tools:showIn="@layout/activity_scrolling">
+    tools:showIn="@layout/activity_scrolling"
+    android:background="#0f0f0f">
+
+
+<LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent" >
 
     <Button
         android:id="@+id/sound1"
@@ -18,24 +27,78 @@
         android:layout_marginStart="0dp"
         android:layout_marginLeft="0dp"
         android:layout_marginTop="0dp"
-        android:onClick="musicOnClick"
+        android:background="@color/colorButtonBackground"
         android:longClickable="true"
-        android:tag="sound1"
-        android:text="@string/sound1" />
+        android:onClick="musicOnClick"
+        android:tag="aaja_aaja_muh_mein"
+        android:text="@string/sound1"
+        android:textColor="@color/colorButton"
+        android:textColorLink="@color/colorButton" />
 
     <Button
+        android:background="@color/colorButtonBackground"
         android:id="@+id/sound2"
+        android:textColor="@color/colorButton"
+        android:textColorLink="@color/colorButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/sound1"
+        android:layout_below="@id/sound1"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_marginStart="0dp"
         android:layout_marginLeft="0dp"
-        android:layout_marginTop="2dp"
-        android:onClick="musicOnClick"
+        android:layout_marginTop="0dp"
         android:longClickable="true"
-        android:tag="sound2"
+        android:onClick="musicOnClick"
+        android:tag="aur_thodi_der_mei_aa_jata"
         android:text="@string/sound2" />
 
+    <Button android:id="@+id/sound3" android:textColor="@color/colorButton"
+        android:textColorLink="@color/colorButton"
+        android:background="@color/colorButtonBackground"
+        android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentStart="true" android:layout_alignParentLeft="true"  android:layout_marginStart="0dp" android:layout_marginLeft="0dp" android:layout_marginTop="0dp" android:onClick="musicOnClick" android:longClickable="true" android:tag="bas_itna_hi_bc" android:text="@string/sound3" android:layout_below="@id/sound2"/>
+
+    <Button android:textColor="@color/colorButton"
+        android:background="@color/colorButtonBackground"
+        android:textColorLink="@color/colorButton"
+        android:id="@+id/sound4" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentStart="true" android:layout_alignParentLeft="true"  android:layout_marginStart="0dp" android:layout_marginLeft="0dp" android:layout_marginTop="0dp" android:onClick="musicOnClick" android:longClickable="true" android:tag="bhagwan_ko_l_farak_ni_padta" android:text="@string/sound4" android:layout_below="@id/sound3"/>
+
+    <Button android:textColor="@color/colorButton"
+        android:background="@color/colorButtonBackground"
+        android:textColorLink="@color/colorButton"
+        android:id="@+id/sound5" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentStart="true" android:layout_alignParentLeft="true"  android:layout_marginStart="0dp" android:layout_marginLeft="0dp" android:layout_marginTop="0dp" android:onClick="musicOnClick" android:longClickable="true" android:tag="intro_theme" android:text="@string/sound5" android:layout_below="@id/sound4"/>
+
+    <Button
+        android:textColor="@color/colorButton"
+        android:background="@color/colorButtonBackground"
+        android:textColorLink="@color/colorButton"
+        android:id="@+id/sound6" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentStart="true" android:layout_alignParentLeft="true"  android:layout_marginStart="0dp" android:layout_marginLeft="0dp" android:layout_marginTop="0dp" android:onClick="musicOnClick" android:longClickable="true" android:tag="jaa_k_dekh_record_mein" android:text="@string/sound6" android:layout_below="@id/sound5"/>
+
+    <Button android:textColor="@color/colorButton"
+        android:background="@color/colorButtonBackground"
+        android:textColorLink="@color/colorButton"
+        android:id="@+id/sound7" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentStart="true" android:layout_alignParentLeft="true"  android:layout_marginStart="0dp" android:layout_marginLeft="0dp" android:layout_marginTop="0dp" android:onClick="musicOnClick" android:longClickable="true" android:tag="l_chhota_h" android:text="@string/sound7" android:layout_below="@id/sound6"/>
+
+    <Button android:textColor="@color/colorButton"
+        android:background="@color/colorButtonBackground"
+        android:textColorLink="@color/colorButton"
+        android:id="@+id/sound8" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentStart="true" android:layout_alignParentLeft="true"  android:layout_marginStart="0dp" android:layout_marginLeft="0dp" android:layout_marginTop="0dp" android:onClick="musicOnClick" android:longClickable="true" android:tag="marna_hai_kya_bsdk" android:text="@string/sound8" android:layout_below="@id/sound7"/>
+
+    <Button android:textColor="@color/colorButton"
+        android:background="@color/colorButtonBackground"
+        android:textColorLink="@color/colorButton"
+        android:id="@+id/sound9" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentStart="true" android:layout_alignParentLeft="true"  android:layout_marginStart="0dp" android:layout_marginLeft="0dp" android:layout_marginTop="0dp" android:onClick="musicOnClick" android:longClickable="true" android:tag="sambhal_isko_apne" android:text="@string/sound9" android:layout_below="@id/sound8"/>
+
+    <Button android:textColor="@color/colorButton"
+        android:background="@color/colorButtonBackground"
+        android:textColorLink="@color/colorButton"
+        android:id="@+id/sound10" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentStart="true" android:layout_alignParentLeft="true"  android:layout_marginStart="0dp" android:layout_marginLeft="0dp" android:layout_marginTop="0dp" android:onClick="musicOnClick" android:longClickable="true" android:tag="tere_ko_kya_lagta_h_main" android:text="@string/sound10" android:layout_below="@id/sound9"/>
+
+    <Button android:textColor="@color/colorButton"
+        android:background="@color/colorButtonBackground"
+        android:textColorLink="@color/colorButton"
+        android:id="@+id/sound11" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentStart="true" android:layout_alignParentLeft="true"  android:layout_marginStart="0dp" android:layout_marginLeft="0dp" android:layout_marginTop="0dp" android:onClick="musicOnClick" android:longClickable="true" android:tag="teri_maa_star_baap_star" android:text="@string/sound11" android:layout_below="@id/sound10"/>
+
 </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
