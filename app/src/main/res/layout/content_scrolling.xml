@@ -13,10 +13,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
         android:layout_marginTop="0dp"
         android:onClick="musicOnClick"
+        android:longClickable="true"
         android:tag="sound1"
         android:text="@string/sound1" />
 
@@ -25,8 +28,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/sound1"
-        android:layout_centerHorizontal="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="2dp"
         android:onClick="musicOnClick"
+        android:longClickable="true"
         android:tag="sound2"
         android:text="@string/sound2" />
+
 </RelativeLayout>
