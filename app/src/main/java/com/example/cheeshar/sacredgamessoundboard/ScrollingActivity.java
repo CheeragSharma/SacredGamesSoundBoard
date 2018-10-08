@@ -5,16 +5,21 @@ import android.content.Context;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
+import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.PopupMenu;
+import android.support.v7.widget.Toolbar;
 import android.view.ContextThemeWrapper;
 import android.view.Gravity;
+import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.View;
 import android.view.MenuItem;
 import android.widget.Button;
-import android.widget.PopupMenu;
+import android.widget.Toast;
 
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -30,6 +35,9 @@ public class ScrollingActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scrolling);
+
+        Toolbar toolbar = (Toolbar)findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
 
         //long press listener
         for(int i = 1 ; i <= 11 ; i++)
@@ -49,17 +57,9 @@ public class ScrollingActivity extends AppCompatActivity {
     }
 
     public void showPopup(View v) {
-//        PopupMenu popupMenu = new PopupMenu()
         Context wrapper = new ContextThemeWrapper(this, R.style.PopupMenu);
-//        PopupMenu popup = new PopupMenu(this, v,Gravity.RIGHT,0,R.style.PopupMenu1);
         PopupMenu popup;
-        if (android.os.Build.VERSION.SDK_INT >= 15) {
-            popup = new PopupMenu(wrapper, v, Gravity.RIGHT);
-        }
-        else
-        {
-            popup = new PopupMenu(wrapper, v);
-        }
+        popup = new PopupMenu(wrapper, v, Gravity.RIGHT);
         MenuInflater inflater = popup.getMenuInflater();
         inflater.inflate(R.menu.popup, popup.getMenu());
         popup.show();
@@ -88,6 +88,37 @@ public class ScrollingActivity extends AppCompatActivity {
     {
         stopPlaying();
         super.onPause();
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        super.onCreateOptionsMenu(menu);
+        getMenuInflater().inflate(R.menu.menu_scrolling, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.action_review:
+                //redirect to play store Url
+                Intent intent = new Intent(Intent.ACTION_VIEW,Uri.parse("https://www.google.com"));
+                startActivity(intent);
+                return true;
+//          // case R.id.action_search:
+//                //Do Something with search
+//            //    return true;
+            case R.id.action_ShareApp:
+                Intent sendIntent = new Intent();
+                sendIntent.setAction(Intent.ACTION_SEND);
+                sendIntent.putExtra(Intent.EXTRA_TEXT, "Hi! Install the Sacred Games Sound Board Apllication From Given Link. Link: ");
+                sendIntent.setType("text/plain");
+                startActivity(sendIntent);
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+
     }
 
     public void musicOnClick(View view)

@@ -1,10 +1,24 @@
-<menu xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.cheeshar.sacredgamessoundboard.ScrollingActivity">
     <item
-        android:id="@+id/action_settings"
+        android:id="@+id/action_review"
         android:orderInCategory="100"
-        android:title="@string/action_settings"
+        android:title="Review On Play Store"
         app:showAsAction="never" />
+    <item
+        android:id="@+id/action_ShareApp"
+        android:orderInCategory="300"
+        android:title="Share App"
+        android:icon="@drawable/share_icon"
+        app:showAsAction="ifRoom" />
+    <!--<item-->
+        <!--android:id="@+id/action_search"-->
+        <!--android:orderInCategory="200"-->
+        <!--android:title="Search"-->
+        <!--android:icon="@drawable/search_icon"-->
+        <!--app:showAsAction="ifRoom"/>-->
 </menu>
