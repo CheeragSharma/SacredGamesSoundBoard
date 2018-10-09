@@ -1,17 +1,19 @@
 package com.example.cheeshar.sacredgamessoundboard;
 
-import android.annotation.TargetApi;
+import android.Manifest;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.media.MediaPlayer;
 import android.net.Uri;
-import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
-import android.support.annotation.RequiresApi;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.PopupMenu;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.ContextThemeWrapper;
 import android.view.Gravity;
 import android.view.Menu;
@@ -31,6 +33,8 @@ public class ScrollingActivity extends AppCompatActivity {
     private MediaPlayer mp;
     String buttonName;
     int sendMusicId;
+    private static final int PERMISSION_REQUEST_CODE = 101;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -56,6 +60,44 @@ public class ScrollingActivity extends AppCompatActivity {
 
     }
 
+    private boolean checkPermission() {
+        int result = ContextCompat.checkSelfPermission(ScrollingActivity.this, Manifest.permission.WRITE_EXTERNAL_STORAGE);
+        if (result == PackageManager.PERMISSION_GRANTED) {
+            return true;
+        } else {
+            return false;
+        }
+        }
+
+    private void requestPermission() {
+
+            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, PERMISSION_REQUEST_CODE);
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String permissions[], int[] grantResults)
+    {
+        switch (requestCode) {
+            case PERMISSION_REQUEST_CODE:
+                if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+
+                    Toast.makeText(ScrollingActivity.this,
+                            "Cool! Permission accepted!", Toast.LENGTH_LONG).show();
+                    String mediaPath = copyFileToExternalStorage(sendMusicId, "sound.mp3");
+                    Uri uri = Uri.parse(mediaPath);
+                    Intent shareIntent = new Intent(Intent.ACTION_SEND);
+                    shareIntent.setType("audio/mp3");
+                    shareIntent.putExtra(Intent.EXTRA_STREAM,uri);
+                    startActivity(Intent.createChooser(shareIntent, "Sending sound"));
+                } else {
+                    Toast.makeText(ScrollingActivity.this,
+                            "Permission denied! You won't be able to share!", Toast.LENGTH_LONG).show();
+                }
+                break;
+        }
+    }
+
+
     public void showPopup(View v) {
         Context wrapper = new ContextThemeWrapper(this, R.style.PopupMenu);
         PopupMenu popup;
@@ -71,13 +113,17 @@ public class ScrollingActivity extends AppCompatActivity {
             @Override
             public boolean onMenuItemClick(MenuItem item)
             {
-                String mediaPath = copyFileToExternalStorage(sendMusicId, "temp.mp3");
-                Uri uri = Uri.parse(mediaPath);
-                Intent shareIntent = new Intent(Intent.ACTION_SEND);
-                shareIntent.setType("audio/mp3");
-                shareIntent.putExtra(Intent.EXTRA_STREAM,uri);
-                shareIntent.putExtra(Intent.EXTRA_TEXT, "Text that needs to be sent along!");
-                startActivity(Intent.createChooser(shareIntent, "Sending sound"));
+                    if (checkPermission()) {
+                        String mediaPath = copyFileToExternalStorage(sendMusicId, "sound.mp3");
+                        Uri uri = Uri.parse(mediaPath);
+                        Intent shareIntent = new Intent(Intent.ACTION_SEND);
+                        shareIntent.setType("audio/mp3");
+                        shareIntent.putExtra(Intent.EXTRA_STREAM,uri);
+                        startActivity(Intent.createChooser(shareIntent, "Sending sound"));
+                        return true;
+                    } else {
+                        requestPermission();
+                    }
                 return true;
             }
 
