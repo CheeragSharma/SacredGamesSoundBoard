@@ -71,7 +71,7 @@ public class ScrollingActivity extends AppCompatActivity {
             @Override
             public boolean onMenuItemClick(MenuItem item)
             {
-                String mediaPath = "file://" + copyFileToExternalStorage(sendMusicId, "temp.mp3");
+                String mediaPath = copyFileToExternalStorage(sendMusicId, "temp.mp3");
                 Uri uri = Uri.parse(mediaPath);
                 Intent shareIntent = new Intent(Intent.ACTION_SEND);
                 shareIntent.setType("audio/mp3");
