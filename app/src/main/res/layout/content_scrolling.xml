@@ -23,204 +23,49 @@
             android:layout_gravity="fill"
             android:gravity="fill">
 
-            <Button
-                android:id="@+id/sound1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginStart="0dp"
-                android:layout_marginLeft="0dp"
-                android:layout_marginTop="0dp"
-                android:background="@color/colorButtonBackground"
-                android:longClickable="true"
-                android:onClick="musicOnClick"
-                android:tag="aaja_aaja_muh_mein"
-                android:text="@string/sound1"
-                android:textColor="@color/colorButton"
-                android:textColorLink="@color/colorButton" />
-
-            <Button
-                android:id="@+id/sound2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/sound1"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:layout_marginStart="0dp"
-                android:layout_marginLeft="0dp"
-                android:layout_marginTop="0dp"
-                android:background="@color/colorButtonBackground"
-                android:longClickable="true"
-                android:onClick="musicOnClick"
-                android:tag="aur_thodi_der_mei_aa_jata"
-                android:text="@string/sound2"
-                android:textColor="@color/colorButton"
-                android:textColorLink="@color/colorButton" />
-
-            <Button
-                android:id="@+id/sound3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/sound2"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:layout_marginStart="0dp"
-                android:layout_marginLeft="0dp"
-                android:layout_marginTop="0dp"
-                android:background="@color/colorButtonBackground"
-                android:longClickable="true"
-                android:onClick="musicOnClick"
-                android:tag="bas_itna_hi_bc"
-                android:text="@string/sound3"
-                android:textColor="@color/colorButton"
-                android:textColorLink="@color/colorButton" />
-
-            <Button
-                android:id="@+id/sound4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/sound3"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:layout_marginStart="0dp"
-                android:layout_marginLeft="0dp"
-                android:layout_marginTop="0dp"
-                android:background="@color/colorButtonBackground"
-                android:longClickable="true"
-                android:onClick="musicOnClick"
-                android:tag="bhagwan_ko_l_farak_ni_padta"
-                android:text="@string/sound4"
-                android:textColor="@color/colorButton"
-                android:textColorLink="@color/colorButton" />
-
-            <Button
-                android:id="@+id/sound5"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/sound4"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:layout_marginStart="0dp"
-                android:layout_marginLeft="0dp"
-                android:layout_marginTop="0dp"
-                android:background="@color/colorButtonBackground"
-                android:longClickable="true"
-                android:onClick="musicOnClick"
-                android:tag="intro_theme"
-                android:text="@string/sound5"
-                android:textColor="@color/colorButton"
-                android:textColorLink="@color/colorButton" />
-
-            <Button
-                android:id="@+id/sound6"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/sound5"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:layout_marginStart="0dp"
-                android:layout_marginLeft="0dp"
-                android:layout_marginTop="0dp"
-                android:background="@color/colorButtonBackground"
-                android:longClickable="true"
-                android:onClick="musicOnClick"
-                android:tag="jaa_k_dekh_record_mein"
-                android:text="@string/sound6"
-                android:textColor="@color/colorButton"
-                android:textColorLink="@color/colorButton" />
-
-            <Button
-                android:id="@+id/sound7"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/sound6"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:layout_marginStart="0dp"
-                android:layout_marginLeft="0dp"
-                android:layout_marginTop="0dp"
-                android:background="@color/colorButtonBackground"
-                android:longClickable="true"
-                android:onClick="musicOnClick"
-                android:tag="l_chhota_h"
-                android:text="@string/sound7"
-                android:textColor="@color/colorButton"
-                android:textColorLink="@color/colorButton" />
-
-            <Button
-                android:id="@+id/sound8"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/sound7"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:layout_marginStart="0dp"
-                android:layout_marginLeft="0dp"
-                android:layout_marginTop="0dp"
-                android:background="@color/colorButtonBackground"
-                android:longClickable="true"
-                android:onClick="musicOnClick"
-                android:tag="marna_hai_kya_bsdk"
-                android:text="@string/sound8"
-                android:textColor="@color/colorButton"
-                android:textColorLink="@color/colorButton" />
-
-            <Button
-                android:id="@+id/sound9"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/sound8"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:layout_marginStart="0dp"
-                android:layout_marginLeft="0dp"
-                android:layout_marginTop="0dp"
-                android:background="@color/colorButtonBackground"
-                android:longClickable="true"
-                android:onClick="musicOnClick"
-                android:tag="sambhal_isko_apne"
-                android:text="@string/sound9"
-                android:textColor="@color/colorButton"
-                android:textColorLink="@color/colorButton" />
-
-            <Button
-                android:id="@+id/sound10"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/sound9"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:layout_marginStart="0dp"
-                android:layout_marginLeft="0dp"
-                android:layout_marginTop="0dp"
-                android:background="@color/colorButtonBackground"
-                android:longClickable="true"
-                android:onClick="musicOnClick"
-                android:tag="tere_ko_kya_lagta_h_main"
-                android:text="@string/sound10"
-                android:textColor="@color/colorButton"
-                android:textColorLink="@color/colorButton" />
-
-            <Button
-                android:id="@+id/sound11"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/sound10"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:layout_marginStart="0dp"
-                android:layout_marginLeft="0dp"
-                android:layout_marginTop="0dp"
-                android:background="@color/colorButtonBackground"
-                android:longClickable="true"
-                android:onClick="musicOnClick"
-                android:tag="teri_maa_star_baap_star"
-                android:text="@string/sound11"
-                android:textColor="@color/colorButton"
-                android:textColorLink="@color/colorButton" />
-
+            <Button android:id="@+id/sound1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentStart="true" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_marginStart="0dp" android:layout_marginLeft="0dp" android:layout_marginTop="0dp" android:background="@color/colorButtonBackground" android:longClickable="true" android:onClick="musicOnClick" android:tag="aadmi_andar_se_kala" android:text="@string/sound1" android:textColor="@color/colorButton" android:textColorLink="@color/colorButton"/>
+            <Button android:id="@+id/sound2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentStart="true" android:layout_alignParentLeft="true" android:layout_marginStart="0dp" android:layout_marginLeft="0dp" android:layout_marginTop="0dp" android:background="@color/colorButtonBackground" android:longClickable="true" android:onClick="musicOnClick" android:tag="aedi_hai_kya" android:text="@string/sound2" android:textColor="@color/colorButton" android:textColorLink="@color/colorButton" android:layout_below="@+id/sound1"/>
+            <Button android:id="@+id/sound3" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentStart="true" android:layout_alignParentLeft="true" android:layout_marginStart="0dp" android:layout_marginLeft="0dp" android:layout_marginTop="0dp" android:background="@color/colorButtonBackground" android:longClickable="true" android:onClick="musicOnClick" android:tag="ae_rbaaz" android:text="@string/sound3" android:textColor="@color/colorButton" android:textColorLink="@color/colorButton" android:layout_below="@+id/sound2"/>
+            <Button android:id="@+id/sound4" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentStart="true" android:layout_alignParentLeft="true" android:layout_marginStart="0dp" android:layout_marginLeft="0dp" android:layout_marginTop="0dp" android:background="@color/colorButtonBackground" android:longClickable="true" android:onClick="musicOnClick" android:tag="ae_rbaaz_long" android:text="@string/sound4" android:textColor="@color/colorButton" android:textColorLink="@color/colorButton" android:layout_below="@+id/sound3"/>
+            <Button android:id="@+id/sound5" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentStart="true" android:layout_alignParentLeft="true" android:layout_marginStart="0dp" android:layout_marginLeft="0dp" android:layout_marginTop="0dp" android:background="@color/colorButtonBackground" android:longClickable="true" android:onClick="musicOnClick" android:tag="ambulance_par_charcha" android:text="@string/sound5" android:textColor="@color/colorButton" android:textColorLink="@color/colorButton" android:layout_below="@+id/sound4"/>
+            <Button android:id="@+id/sound6" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentStart="true" android:layout_alignParentLeft="true" android:layout_marginStart="0dp" android:layout_marginLeft="0dp" android:layout_marginTop="0dp" android:background="@color/colorButtonBackground" android:longClickable="true" android:onClick="musicOnClick" android:tag="apni_bhi_phat_gyi" android:text="@string/sound6" android:textColor="@color/colorButton" android:textColorLink="@color/colorButton" android:layout_below="@+id/sound5"/>
+            <Button android:id="@+id/sound7" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentStart="true" android:layout_alignParentLeft="true" android:layout_marginStart="0dp" android:layout_marginLeft="0dp" android:layout_marginTop="0dp" android:background="@color/colorButtonBackground" android:longClickable="true" android:onClick="musicOnClick" android:tag="apni_g_khol_k_dekh" android:text="@string/sound7" android:textColor="@color/colorButton" android:textColorLink="@color/colorButton" android:layout_below="@+id/sound6"/>
+            <Button android:id="@+id/sound8" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentStart="true" android:layout_alignParentLeft="true" android:layout_marginStart="0dp" android:layout_marginLeft="0dp" android:layout_marginTop="0dp" android:background="@color/colorButtonBackground" android:longClickable="true" android:onClick="musicOnClick" android:tag="asli_dhanda_hai_politics" android:text="@string/sound8" android:textColor="@color/colorButton" android:textColorLink="@color/colorButton" android:layout_below="@+id/sound7"/>
+            <Button android:id="@+id/sound9" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentStart="true" android:layout_alignParentLeft="true" android:layout_marginStart="0dp" android:layout_marginLeft="0dp" android:layout_marginTop="0dp" android:background="@color/colorButtonBackground" android:longClickable="true" android:onClick="musicOnClick" android:tag="atapi_vatapi" android:text="@string/sound9" android:textColor="@color/colorButton" android:textColorLink="@color/colorButton" android:layout_below="@+id/sound8"/>
+            <Button android:id="@+id/sound10" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentStart="true" android:layout_alignParentLeft="true" android:layout_marginStart="0dp" android:layout_marginLeft="0dp" android:layout_marginTop="0dp" android:background="@color/colorButtonBackground" android:longClickable="true" android:onClick="musicOnClick" android:tag="bas_itna_hi" android:text="@string/sound10" android:textColor="@color/colorButton" android:textColorLink="@color/colorButton" android:layout_below="@+id/sound9"/>
+            <Button android:id="@+id/sound11" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentStart="true" android:layout_alignParentLeft="true" android:layout_marginStart="0dp" android:layout_marginLeft="0dp" android:layout_marginTop="0dp" android:background="@color/colorButtonBackground" android:longClickable="true" android:onClick="musicOnClick" android:tag="bc_teri_aukat_h_scent" android:text="@string/sound11" android:textColor="@color/colorButton" android:textColorLink="@color/colorButton" android:layout_below="@+id/sound10"/>
+            <Button android:id="@+id/sound12" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentStart="true" android:layout_alignParentLeft="true" android:layout_marginStart="0dp" android:layout_marginLeft="0dp" android:layout_marginTop="0dp" android:background="@color/colorButtonBackground" android:longClickable="true" android:onClick="musicOnClick" android:tag="bhagwan_ko_l_farak_ni_padta" android:text="@string/sound12" android:textColor="@color/colorButton" android:textColorLink="@color/colorButton" android:layout_below="@+id/sound11"/>
+            <Button android:id="@+id/sound13" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentStart="true" android:layout_alignParentLeft="true" android:layout_marginStart="0dp" android:layout_marginLeft="0dp" android:layout_marginTop="0dp" android:background="@color/colorButtonBackground" android:longClickable="true" android:onClick="musicOnClick" android:tag="bola_tha_na_vaapis_aaoge" android:text="@string/sound13" android:textColor="@color/colorButton" android:textColorLink="@color/colorButton" android:layout_below="@+id/sound12"/>
+            <Button android:id="@+id/sound14" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentStart="true" android:layout_alignParentLeft="true" android:layout_marginStart="0dp" android:layout_marginLeft="0dp" android:layout_marginTop="0dp" android:background="@color/colorButtonBackground" android:longClickable="true" android:onClick="musicOnClick" android:tag="bol_na_mc_kaun_h" android:text="@string/sound14" android:textColor="@color/colorButton" android:textColorLink="@color/colorButton" android:layout_below="@+id/sound13"/>
+            <Button android:id="@+id/sound15" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentStart="true" android:layout_alignParentLeft="true" android:layout_marginStart="0dp" android:layout_marginLeft="0dp" android:layout_marginTop="0dp" android:background="@color/colorButtonBackground" android:longClickable="true" android:onClick="musicOnClick" android:tag="bunty_koi_bolta_tha_tharki" android:text="@string/sound15" android:textColor="@color/colorButton" android:textColorLink="@color/colorButton" android:layout_below="@+id/sound14"/>
+            <Button android:id="@+id/sound16" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentStart="true" android:layout_alignParentLeft="true" android:layout_marginStart="0dp" android:layout_marginLeft="0dp" android:layout_marginTop="0dp" android:background="@color/colorButtonBackground" android:longClickable="true" android:onClick="musicOnClick" android:tag="bunty_to_c_h" android:text="@string/sound16" android:textColor="@color/colorButton" android:textColorLink="@color/colorButton" android:layout_below="@+id/sound15"/>
+            <Button android:id="@+id/sound17" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentStart="true" android:layout_alignParentLeft="true" android:layout_marginStart="0dp" android:layout_marginLeft="0dp" android:layout_marginTop="0dp" android:background="@color/colorButtonBackground" android:longClickable="true" android:onClick="musicOnClick" android:tag="cassette_mera_main_sunega" android:text="@string/sound17" android:textColor="@color/colorButton" android:textColorLink="@color/colorButton" android:layout_below="@+id/sound16"/>
+            <Button android:id="@+id/sound18" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentStart="true" android:layout_alignParentLeft="true" android:layout_marginStart="0dp" android:layout_marginLeft="0dp" android:layout_marginTop="0dp" android:background="@color/colorButtonBackground" android:longClickable="true" android:onClick="musicOnClick" android:tag="chaku_above_everything" android:text="@string/sound18" android:textColor="@color/colorButton" android:textColorLink="@color/colorButton" android:layout_below="@+id/sound17"/>
+            <Button android:id="@+id/sound19" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentStart="true" android:layout_alignParentLeft="true" android:layout_marginStart="0dp" android:layout_marginLeft="0dp" android:layout_marginTop="0dp" android:background="@color/colorButtonBackground" android:longClickable="true" android:onClick="musicOnClick" android:tag="ch_hat" android:text="@string/sound19" android:textColor="@color/colorButton" android:textColorLink="@color/colorButton" android:layout_below="@+id/sound18"/>
+            <Button android:id="@+id/sound20" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentStart="true" android:layout_alignParentLeft="true" android:layout_marginStart="0dp" android:layout_marginLeft="0dp" android:layout_marginTop="0dp" android:background="@color/colorButtonBackground" android:longClickable="true" android:onClick="musicOnClick" android:tag="dekh_c" android:text="@string/sound20" android:textColor="@color/colorButton" android:textColorLink="@color/colorButton" android:layout_below="@+id/sound19"/>
+            <Button android:id="@+id/sound21" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentStart="true" android:layout_alignParentLeft="true" android:layout_marginStart="0dp" android:layout_marginLeft="0dp" android:layout_marginTop="0dp" android:background="@color/colorButtonBackground" android:longClickable="true" android:onClick="musicOnClick" android:tag="dekh_lega_tereko_mc" android:text="@string/sound21" android:textColor="@color/colorButton" android:textColorLink="@color/colorButton" android:layout_below="@+id/sound20"/>
+            <Button android:id="@+id/sound22" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentStart="true" android:layout_alignParentLeft="true" android:layout_marginStart="0dp" android:layout_marginLeft="0dp" android:layout_marginTop="0dp" android:background="@color/colorButtonBackground" android:longClickable="true" android:onClick="musicOnClick" android:tag="dharam_ka_bazaar" android:text="@string/sound22" android:textColor="@color/colorButton" android:textColorLink="@color/colorButton" android:layout_below="@+id/sound21"/>
+            <Button android:id="@+id/sound23" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentStart="true" android:layout_alignParentLeft="true" android:layout_marginStart="0dp" android:layout_marginLeft="0dp" android:layout_marginTop="0dp" android:background="@color/colorButtonBackground" android:longClickable="true" android:onClick="musicOnClick" android:tag="h_ek_harami" android:text="@string/sound23" android:textColor="@color/colorButton" android:textColorLink="@color/colorButton" android:layout_below="@+id/sound22"/>
+            <Button android:id="@+id/sound24" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentStart="true" android:layout_alignParentLeft="true" android:layout_marginStart="0dp" android:layout_marginLeft="0dp" android:layout_marginTop="0dp" android:background="@color/colorButtonBackground" android:longClickable="true" android:onClick="musicOnClick" android:tag="khada_bhi_hota_uska" android:text="@string/sound24" android:textColor="@color/colorButton" android:textColorLink="@color/colorButton" android:layout_below="@+id/sound23"/>
+            <Button android:id="@+id/sound25" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentStart="true" android:layout_alignParentLeft="true" android:layout_marginStart="0dp" android:layout_marginLeft="0dp" android:layout_marginTop="0dp" android:background="@color/colorButtonBackground" android:longClickable="true" android:onClick="musicOnClick" android:tag="life_mei_pehli_baar_dimaag_ka" android:text="@string/sound25" android:textColor="@color/colorButton" android:textColorLink="@color/colorButton" android:layout_below="@+id/sound24"/>
+            <Button android:id="@+id/sound26" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentStart="true" android:layout_alignParentLeft="true" android:layout_marginStart="0dp" android:layout_marginLeft="0dp" android:layout_marginTop="0dp" android:background="@color/colorButtonBackground" android:longClickable="true" android:onClick="musicOnClick" android:tag="l_chhota_h" android:text="@string/sound26" android:textColor="@color/colorButton" android:textColorLink="@color/colorButton" android:layout_below="@+id/sound25"/>
+            <Button android:id="@+id/sound27" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentStart="true" android:layout_alignParentLeft="true" android:layout_marginStart="0dp" android:layout_marginLeft="0dp" android:layout_marginTop="0dp" android:background="@color/colorButtonBackground" android:longClickable="true" android:onClick="musicOnClick" android:tag="maa_k_gya_offer" android:text="@string/sound27" android:textColor="@color/colorButton" android:textColorLink="@color/colorButton" android:layout_below="@+id/sound26"/>
+            <Button android:id="@+id/sound28" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentStart="true" android:layout_alignParentLeft="true" android:layout_marginStart="0dp" android:layout_marginLeft="0dp" android:layout_marginTop="0dp" android:background="@color/colorButtonBackground" android:longClickable="true" android:onClick="musicOnClick" android:tag="madarchh_sadele_lun" android:text="@string/sound28" android:textColor="@color/colorButton" android:textColorLink="@color/colorButton" android:layout_below="@+id/sound27"/>
+            <Button android:id="@+id/sound29" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentStart="true" android:layout_alignParentLeft="true" android:layout_marginStart="0dp" android:layout_marginLeft="0dp" android:layout_marginTop="0dp" android:background="@color/colorButtonBackground" android:longClickable="true" android:onClick="musicOnClick" android:tag="mera_baap_sabki_g_maarne_wala_h" android:text="@string/sound29" android:textColor="@color/colorButton" android:textColorLink="@color/colorButton" android:layout_below="@+id/sound28"/>
+            <Button android:id="@+id/sound30" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentStart="true" android:layout_alignParentLeft="true" android:layout_marginStart="0dp" android:layout_marginLeft="0dp" android:layout_marginTop="0dp" android:background="@color/colorButtonBackground" android:longClickable="true" android:onClick="musicOnClick" android:tag="mukti_dede" android:text="@string/sound30" android:textColor="@color/colorButton" android:textColorLink="@color/colorButton" android:layout_below="@+id/sound29"/>
+            <Button android:id="@+id/sound31" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentStart="true" android:layout_alignParentLeft="true" android:layout_marginStart="0dp" android:layout_marginLeft="0dp" android:layout_marginTop="0dp" android:background="@color/colorButtonBackground" android:longClickable="true" android:onClick="musicOnClick" android:tag="naya_dharam_maangta_tha" android:text="@string/sound31" android:textColor="@color/colorButton" android:textColorLink="@color/colorButton" android:layout_below="@+id/sound30"/>
+            <Button android:id="@+id/sound32" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentStart="true" android:layout_alignParentLeft="true" android:layout_marginStart="0dp" android:layout_marginLeft="0dp" android:layout_marginTop="0dp" android:background="@color/colorButtonBackground" android:longClickable="true" android:onClick="musicOnClick" android:tag="paise_ke_naam_pe_aisa_dosti" android:text="@string/sound32" android:textColor="@color/colorButton" android:textColorLink="@color/colorButton" android:layout_below="@+id/sound31"/>
+            <Button android:id="@+id/sound33" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentStart="true" android:layout_alignParentLeft="true" android:layout_marginStart="0dp" android:layout_marginLeft="0dp" android:layout_marginTop="0dp" android:background="@color/colorButtonBackground" android:longClickable="true" android:onClick="musicOnClick" android:tag="parulkar_ki_g_se_bahr" android:text="@string/sound33" android:textColor="@color/colorButton" android:textColorLink="@color/colorButton" android:layout_below="@+id/sound32"/>
+            <Button android:id="@+id/sound34" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentStart="true" android:layout_alignParentLeft="true" android:layout_marginStart="0dp" android:layout_marginLeft="0dp" android:layout_marginTop="0dp" android:background="@color/colorButtonBackground" android:longClickable="true" android:onClick="musicOnClick" android:tag="pichli_baar_bola_aukat" android:text="@string/sound34" android:textColor="@color/colorButton" android:textColorLink="@color/colorButton" android:layout_below="@+id/sound33"/>
+            <Button android:id="@+id/sound35" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentStart="true" android:layout_alignParentLeft="true" android:layout_marginStart="0dp" android:layout_marginLeft="0dp" android:layout_marginTop="0dp" android:background="@color/colorButtonBackground" android:longClickable="true" android:onClick="musicOnClick" android:tag="saif_bc" android:text="@string/sound35" android:textColor="@color/colorButton" android:textColorLink="@color/colorButton" android:layout_below="@+id/sound34"/>
+            <Button android:id="@+id/sound36" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentStart="true" android:layout_alignParentLeft="true" android:layout_marginStart="0dp" android:layout_marginLeft="0dp" android:layout_marginTop="0dp" android:background="@color/colorButtonBackground" android:longClickable="true" android:onClick="musicOnClick" android:tag="saif_bc_2" android:text="@string/sound36" android:textColor="@color/colorButton" android:textColorLink="@color/colorButton" android:layout_below="@+id/sound35"/>
+            <Button android:id="@+id/sound37" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentStart="true" android:layout_alignParentLeft="true" android:layout_marginStart="0dp" android:layout_marginLeft="0dp" android:layout_marginTop="0dp" android:background="@color/colorButtonBackground" android:longClickable="true" android:onClick="musicOnClick" android:tag="sala_suar" android:text="@string/sound37" android:textColor="@color/colorButton" android:textColorLink="@color/colorButton" android:layout_below="@+id/sound36"/>
+            <Button android:id="@+id/sound38" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentStart="true" android:layout_alignParentLeft="true" android:layout_marginStart="0dp" android:layout_marginLeft="0dp" android:layout_marginTop="0dp" android:background="@color/colorButtonBackground" android:longClickable="true" android:onClick="musicOnClick" android:tag="taboot_ka_jawaab" android:text="@string/sound38" android:textColor="@color/colorButton" android:textColorLink="@color/colorButton" android:layout_below="@+id/sound37"/>
+            <Button android:id="@+id/sound39" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentStart="true" android:layout_alignParentLeft="true" android:layout_marginStart="0dp" android:layout_marginLeft="0dp" android:layout_marginTop="0dp" android:background="@color/colorButtonBackground" android:longClickable="true" android:onClick="musicOnClick" android:tag="tere_g_mei_chhatri" android:text="@string/sound39" android:textColor="@color/colorButton" android:textColorLink="@color/colorButton" android:layout_below="@+id/sound38"/>
+            <Button android:id="@+id/sound40" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentStart="true" android:layout_alignParentLeft="true" android:layout_marginStart="0dp" android:layout_marginLeft="0dp" android:layout_marginTop="0dp" android:background="@color/colorButtonBackground" android:longClickable="true" android:onClick="musicOnClick" android:tag="tere_g_mei_chhatri_short" android:text="@string/sound40" android:textColor="@color/colorButton" android:textColorLink="@color/colorButton" android:layout_below="@+id/sound39"/>
+            <Button android:id="@+id/sound41" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentStart="true" android:layout_alignParentLeft="true" android:layout_marginStart="0dp" android:layout_marginLeft="0dp" android:layout_marginTop="0dp" android:background="@color/colorButtonBackground" android:longClickable="true" android:onClick="musicOnClick" android:tag="teri_maa_r_baap_c" android:text="@string/sound41" android:textColor="@color/colorButton" android:textColorLink="@color/colorButton" android:layout_below="@+id/sound40"/>
+            <Button android:id="@+id/sound42" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentStart="true" android:layout_alignParentLeft="true" android:layout_marginStart="0dp" android:layout_marginLeft="0dp" android:layout_marginTop="0dp" android:background="@color/colorButtonBackground" android:longClickable="true" android:onClick="musicOnClick" android:tag="tumhare_is_c_mei_mera" android:text="@string/sound42" android:textColor="@color/colorButton" android:textColorLink="@color/colorButton" android:layout_below="@+id/sound41"/>
+            <Button android:id="@+id/sound43" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentStart="true" android:layout_alignParentLeft="true" android:layout_marginStart="0dp" android:layout_marginLeft="0dp" android:layout_marginTop="0dp" android:background="@color/colorButtonBackground" android:longClickable="true" android:onClick="musicOnClick" android:tag="umar_ka_challange" android:text="@string/sound43" android:textColor="@color/colorButton" android:textColorLink="@color/colorButton" android:layout_below="@+id/sound42"/>
         </RelativeLayout>
     </LinearLayout>
 </ScrollView>
