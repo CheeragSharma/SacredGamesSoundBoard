@@ -44,7 +44,7 @@ public class ScrollingActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         //long press listener
-        for(int i = 1 ; i <= 11 ; i++)
+        for(int i = 1 ; i <= 43 ; i++)
         {
             buttonName = "sound" + i;
             int resId = getResources().getIdentifier(buttonName,"id" , getPackageName());
